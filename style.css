@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  text-transform: capitalize;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;  
+
+}
+
+.parent .product {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #b6b6b6;
+  padding: 15px;
+}
+.parent .product p {
+  font-size: initial;
+  font-weight: normal;
+  padding: 5px;
+  color: initial;
+}
+/* Mobile Screen */
+@media (max-width: 768px) {
+  .parent {
+    display: flex;
+    flex-direction: column;
+  }
+  .product {
+    margin: 10px;
+  }
+}
+/* Medium Screen */
+@media (min-width: 768px) {
+  .parent {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .product {
+    width: 49%;
+    color: #ff0000;
+    margin-top: 5px;
+  }
+}
+/* Larg Screen */
+@media (min-width: 1200px) {
+  .parent {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .product {
+    width: 24%;
+    color: #009688;
+  }
+}
+
+
+.chick{
+  width: 100px;
+  height: 40px;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 8px;
+  /* border: none; */
+  margin: 40px ;
+  color: white;
+  background-color: #2196f3;
+}
+/*/////////////////////////////////*/
+h1{
+  /* width: 800px; */
+  margin: 10px auto;
+  background-color: #ccc;
+  padding: 30px;
+  text-align: center;
+
+
+}
+
+#getcomputedsteyle{
+  background-color: antiquewhite;
+  padding: 20px;
+  width: 300px;
+  
+
+}

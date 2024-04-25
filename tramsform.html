@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test_Transform</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="parent">
+        <div class="product">produce one
+            <p>this is product</p>
+        </div>
+        <div class="product">produce two
+            <p>this is product</p>
+        </div>
+        <div class="product">produce three
+            <p>this is product</p>
+        </div>
+        <div class="product">produce four
+            <p>this is product</p>
+        </div>
+        <button class="chick">chick</button>
+    </div>
+    <hr style="margin:30px 0 ;">
+    <h5 id="getcomputedsteyle">test get computed Statyle</h5>
+    <!-- <h1 id="test" class="test">nser26n</h1> -->
+    <script>
+        var parent = document.getElementsByClassName("parent")[0];
+        var eleH1 = document.createElement(`h1`);
+        eleH1.innerHTML = "hrmash";
+        document.body.insertBefore(eleH1, parent);
+        var prod = document.getElementsByClassName('product')[0];
+        //    parent.insertAdjacentHTML("afterbegin","nser allh almoflhi");
+        // eleH1.remove();
+        function ddd() {parent.style.backgroundColor = "red" }
+        // parent.replaceChild(e)        
+        prod.addEventListener("click", ddd);
+        var nnew = document.createElement('div')
+        nnew.classList.add("chick");
+        nnew.innerHTML="nser allh almoflhi";
+        prod.insertAdjacentElement("beforebegin",nnew)
+        nnew.classList.toggle("product")
+        nnew.classList.remove("chick")
+        
+        var get = document.getElementById("getcomputedsteyle");
+        // var newelement = `
+        //  <div class="product">
+        //     h h h h h h h h
+        // </div>`
+            var elemstyle = window.getComputedStyle(get);
+          get.setAttribute('style','color:red')
+        //   get.style.color="red"
+        // parent.replaceChild(nnew,prod)
+         window.getComputedStyle(parent)
+         get.removeAttribute('style')
+        </script>
+    <script src="javascrpt.js"></script>
+
+</body>
+
+</html>
