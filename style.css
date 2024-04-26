@@ -58,15 +58,16 @@ body {
 
 
 .chick{
-  width: 100px;
-  height: 40px;
-  font-size: 25px;
+  width: 150px;
+  height: 60px;
+  font-size: 30px;
   font-weight: bold;
   border-radius: 8px;
   /* border: none; */
   margin: 40.2px ;
   color: white;
   background-color: #2196f3;
+  letter-spacing: 2px;
 }
 /*/////////////////////////////////*/
 h1{
