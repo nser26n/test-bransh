@@ -19,9 +19,7 @@
         <div class="product">produce three
             <p>this is product</p>
         </div>
-        <div class="product">produce four
-            <p>this is product</p>
-        </div>
+ 
         <button class="chick">chick</button>
     </div>
     <hr style="margin:30px 0 ;">
@@ -33,10 +31,8 @@
         eleH1.innerHTML = "hrmash";
         document.body.insertBefore(eleH1, parent);
         var prod = document.getElementsByClassName('product')[0];
-        //    parent.insertAdjacentHTML("afterbegin","nser allh almoflhi");
-        // eleH1.remove();
+
         function ddd() {parent.style.backgroundColor = "red" }
-        // parent.replaceChild(e)        
         prod.addEventListener("click", ddd);
         var nnew = document.createElement('div')
         nnew.classList.add("chick");
@@ -46,14 +42,10 @@
         nnew.classList.remove("chick")
         
         var get = document.getElementById("getcomputedsteyle");
-        // var newelement = `
-        //  <div class="product">
-        //     h h h h h h h h
-        // </div>`
+
             var elemstyle = window.getComputedStyle(get);
           get.setAttribute('style','color:red')
-        //   get.style.color="red"
-        // parent.replaceChild(nnew,prod)
+
          window.getComputedStyle(parent)
          get.removeAttribute('style')
         </script>
